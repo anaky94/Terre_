@@ -1,9 +1,12 @@
 /*  Créez un programme qui affiche son nom de fichier.
-1- definir la variable dossier avec le chemin du dossier ou se trouvent les fichiers
-2- définir la variable fichier avec le nom du fichier que tu veux mourir 
 
-importer les modules  fichier 'fs' opérations de fichier. 
-importer le modules path pour gérer les chemin.
+peusdo : 
+
+ 1- definir la variable dossier avec le chemin du dossier ou se trouvent les fichiers
+ 2- définir la variable fichier avec le nom du fichier que tu veux mourir 
+
+ importer les modules  fichier 'fs' opérations de fichier. 
+ importer le modules path pour gérer les chemin.
 
 /---------------  ------------------\
 
