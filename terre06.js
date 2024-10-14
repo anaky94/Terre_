@@ -12,7 +12,9 @@ erreur.
  */
 
 let dividende = parseFloat(process.argv[2]) ;
+
 let diviseur =parseFloat(process.argv[3]) ;
+
 function division(dividende, diviseur){
     if (diviseur ===0){
         console.log("Erreur.")

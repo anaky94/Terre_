@@ -19,8 +19,7 @@ if (arguments.length===2){
 
 const addition =(firstNumber, secondtNumber) => {
     const result= firstNumber + secondtNumber
-
-
+    
     return result
 }
 console.log(arguments)
