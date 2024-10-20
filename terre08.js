@@ -6,12 +6,8 @@
 Exemples d’utilisation :
 $> python exo.py “Hello world!”
 12
-
-
 $> python exo.py
 erreur.
-
-
 $> python exo.py “Bonjour” “Aurevoir”
 erreur.
 
@@ -22,7 +18,8 @@ erreur.
 Fonctions interdites: 
 -La fonction length
 -La fonction size */
-for (let i = chaineArgumentsRevers.length - 1; i >= 0; i--) {
+
+for (let i = chaineArgumentsRevers.l - 1; i >= 0; i--) {
 
     console.log ()
 }
