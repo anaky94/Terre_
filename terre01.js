@@ -7,6 +7,7 @@ const dernierValeurAscii = 122;
 let lettres = [];
 for (let i = premiervaleurAscii; i <= dernierValeurAscii; i++) {
   lettres.push(String.fromCharCode(i));
-}
+  return
+} 
 console.log(lettres.join(""));
 
