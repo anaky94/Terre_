@@ -1,14 +1,4 @@
 
-
-<<<<<<< HEAD
-
-
-
-
-
-/* crere un progrmme qui affiche de nombre de chaine de caractère passez en agrgument 
-Créez un programme qui affiche le nombre de caractères d’une chaîne de caractères passée en argument.
-=======
 /*Créez un programme qui affiche le nombre de caractères d’une chaîne de caractères passée en argument.
 >>>>>>> c0d47d18b97937ed21158962315c5f507a1bed55
 
@@ -47,25 +37,3 @@ if (isNaN(element)){ // verification si la chaine contien des chiffres
  }
 
 console.log(compteur); 
-
-=======
-
-$> python exo.py
-erreur.
-
-
-$> python exo.py “Bonjour” “Aurevoir”
-erreur.
-
-$> python exo.py 10
-erreur.
-
-
-Fonctions interdites: 
--La fonction length
--La fonction size */
-for (let i = chaineArgumentsRevers.length - 1; i >= 0; i--) {
-
-    console.log ()
-}
->>>>>>> c0d47d18b97937ed21158962315c5f507a1bed55
