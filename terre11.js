@@ -15,14 +15,22 @@ Attention : je compte sur vous pour gérer les potentielles erreurs d’argument
 Fonctions interdites: 
 -La fonction pow
 */
+const arguments = process.argv.slice(2);
 
-let exposant = 5;
-let puissance = 5;
-let resultat = 0;
-if (isNaN(puissance) || isNaN(exposant)) {
-  console.log("erreur: veuillez entrez des nombres");
-} else if (resultat == puissance ** exposant) {
-  console.log(resultat);
-  resultat = resultat ** puissance;
+let puissance = parseFloat(arguments[0]);
+let exposant = parseFloat(arguments[1]);
+
+
+// calcule de la puissance
+let resultat = puissance ** exposant;
+
+for (let i = 0; i < exposant; i++) {
+  resultat *= puissance; // multiplier le resultat par la puissance à chaque itération par la boucle
+  if (exposant===0){
+    console.log(resultat)
+  } else if (exposant===1){
+    console.log(resultat)
+  }
 }
-for (let resltat=0;puissance==exposant; resltat  ) 
+  
+console.log(resultat);
