@@ -20,17 +20,15 @@ const arguments = process.argv.slice(2);
 let puissance = parseFloat(arguments[0]);
 let exposant = parseFloat(arguments[1]);
 
-
 // calcule de la puissance
 let resultat = puissance ** exposant;
 
 for (let i = 0; i < exposant; i++) {
   resultat *= puissance; // multiplier le resultat par la puissance à chaque itération par la boucle
-  if (exposant===0){
-    console.log(resultat)
-  } else if (exposant===1){
-    console.log(resultat)
-  }
+  if (exposant & (puissance === 0)) {
+    console.log("erreur");
+  } else if (exposant & (puissance === 1)) {
+    console.log(resultat);
+  } else console.log(resultat);
 }
-  
-console.log(resultat);
+console.log(resusltat)
