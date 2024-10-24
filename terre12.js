@@ -12,12 +12,15 @@ Fonctions interdites:
 */
 
 let puissanceDunNombre = parseFloat(25);
-let resultat = puissanceDunNombre * 0.5;
-// for (let i= 0 );
+let epsilon = 0.00001;
+let estimation = puissanceDunNombre/2;
 if (isNaN(puissanceDunNombre)) {
-  console.log("ereur");
+  console.log("ereur entrez un nombre valide");
 } else if (puissanceDunNombre < 0) {
   console.log("erreur: nombre négatif");
 } else {
-  console.log(`la racince carée de ${puissanceDunNombre} est ${resultat}`);
+  while(estimation*estimation-puissanceDunNombre> epsilon){
+    estimation=(estimation+puissanceDunNombre/estimation/2)
+  }
 }
+console.log(`la racince carée de ${puissanceDunNombre} est ${resultat}`);

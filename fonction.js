@@ -1,17 +1,20 @@
 /*fonction*/
 
-const args = process.argv(slice(2));
+// function addition(nombreUn, nombreDeux) {
+//   console.log(nombreUn + nombreDeux);
+// }
 
-let tableau = args;
+// addition(1, 20);
+// addition(1, 255);
+let crie = "toujour plus moyen";
 
-for (let i = 0; i < tableau.length; i++) {
-console.log(tableau[i]);
-
+function crieDeGuerre() {
+  crie = "toujour plus fort";
+  console.log(crie);
 }
 
-
-
-
-
+crieDeGuerre();
+console.log(crie);
+console.log(crie);
 /*parsing*/
 /*fonction*/
