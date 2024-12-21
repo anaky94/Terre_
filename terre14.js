@@ -7,13 +7,11 @@ $> rudy exo.rb 23:40
 lorsque j'ecrit 12:40 en sorti je doit avoir 
 
 Attention : midi et minuit 12:00 = 00 : 00
- */
-//determiné les variable d'heures et de munite 
+*/
 
+//determiné les variable d'heures et de munite 
 // const DeuxPoint = arguments[1];
 // const DeclarationMinutes = arguments[1];
-
-
 // if (heures && time.includes(':')){
 //     let [heures, minutes] = time.split(":");// séparer heure et minutes
 //     console.log(` heure: ${heures}, Minutes : ${minutes}`);
@@ -22,17 +20,16 @@ Attention : midi et minuit 12:00 = 00 : 00
 // }
 // heures = heure - 12 // ici je declare que si l'utilisateur rentre l'heure de type 23:23 en sortis j'aurais 11:23 donc 23:23 == 11:23
 
-const arguments = process.argv.slice(2)
+const arguments = process.argv.slice(2);
 const DeclarationHeures = arguments [0];
 
-let calculeHeaure = arguments-12
+let calculeHeaure = arguments-12;
 
 if (arguments.lenght > 4){
    console.log("erreur")
-
 }
 
-console.log(arguments)
+console.log(arguments);
 
 // let calculeMinute = DeclarationMinutes + DeclarationMinutes
 

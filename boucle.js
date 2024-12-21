@@ -86,11 +86,4 @@ boucle { do whil} quand inb doit exécuter le bloc d'instruction au moins une fo
 // }
 
 
-let i = 0;
-
-while (i > 3){
-    console.log(i)
-}
-
-
 
