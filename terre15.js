@@ -19,8 +19,8 @@ const heure24 = parseInt(heureDonnee.split(":")[0],10);
 const minute = heureDonnee.split (":")[1];
 
 // Conversion au format  des heures 
-const heure12 = (heure24 % 12  === 0) ? 12 : heure24 % 12; 
-const suffixe = (heure24 >= 12) ?"PM":"AM"; 
+const heure12 = (heure24 % 24  === 0) ? 12 : heure24 % 12; 
+const suffixe = (heure24 >= 24) ?"PM":"AM"; 
 
 // affichage de l'heure au format de 12heurs
 console.log(` il est ${heure12}:${minute} ${suffixe}`);

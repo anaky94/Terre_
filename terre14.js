@@ -9,39 +9,32 @@ lorsque j'ecrit 12:40 en sorti je doit avoir
 Attention : midi et minuit 12:00 = 00 : 00
 */
 
-//determiné les variable d'heures et de munite 
-// const DeuxPoint = arguments[1];
-// const DeclarationMinutes = arguments[1];
-// if (heures && time.includes(':')){
-//     let [heures, minutes] = time.split(":");// séparer heure et minutes
-//     console.log(` heure: ${heures}, Minutes : ${minutes}`);
-// } else {
-//     console.log("veuillez entrez une heure au bon format ")
-// }
-// heures = heure - 12 // ici je declare que si l'utilisateur rentre l'heure de type 23:23 en sortis j'aurais 11:23 donc 23:23 == 11:23
+const heureDonnee = process.argv[2];
 
-const arguments = process.argv.slice(2);
-const DeclarationHeures = arguments [0];
 
-let calculeHeaure = arguments-12;
 
-if (arguments.lenght > 4){
-   console.log("erreur")
+const heureRegex =  /^([0-9] {1}[0-9] {1}|2[0-3]):[0-5][0-9]$/;
+
+function heurePmenAm(){
+    
+    if (!heureRegex.test(heureDonnee)){
+        console.log("erreur : veillez entrez une heure valide du format HH:MM. ");
+        return; 
+        
+    }
 }
 
-console.log(arguments);
+// Extraction des heures et minutes
+const heure24 = parseInt(heureDonnee.split(":")[0],10);
+const minute = heureDonnee.split (":")[1];
 
-// let calculeMinute = DeclarationMinutes + DeclarationMinutes
+// Conversion au format  des heures 
+const heure12 = (heure24 % 12  === 0) ? 12 : heure24 % 12; 
+const suffixe = (heure24 >= 12) ?"PM":"AM"; 
 
+// affichage de l'heure au format de 12heurs
+console.log(` il est ${heure12}:${minute} ${suffixe}`);
 
+heurePmenAm();
 
-//  if (DeclarationHeures > 12){
-//     console.log(+DeclarationHeures  - 12)
-
-//  } else if (+DeclarationHeures  === 24){
-//     console.log("00:00")
-//  }
-
- 
-//  console.log(calculeHeaure +":"+ calculeMinute);
  
