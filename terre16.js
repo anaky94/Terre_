@@ -33,25 +33,3 @@ function regrouper (a,b,c){
   }
 regrouper(arguments[0],arguments[1],arguments[2])
 
-// a > b et a > c et a < b et a < c
- // b < a et 
-//  if (a < b && a > c ){
-//   console.log(true)
-// }else {
-//   console.log(false)
-// }
-// if (a===b && b===c){
-//   console.log("erreur")
-// }
-//declarer les cconditions
-// function suisse(nombreUn,nombreDeux,nombreTrois){
-
-//   console.log(Math.min(nombreUn, nombreDeux, nombreTrois)); 
-//   if ( nombreUn > nombreDeux && nombreUn < nombreTrois ) {
-//     console.log(nombreDeux)
-//   }
-//   if (nombreUn===nombreDeux && nombreDeux === nombreTrois){
-//     console.log("erreur")
-//   }
-// }
-// pour i de 1 a tableau.longeur

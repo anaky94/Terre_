@@ -14,15 +14,15 @@ const asciDeDepart = lettreDeDepart.charCodeAt(0);// Convertit cette lettre en v
 
 const dernierValeurAscii = 122;
 
-let lettres = [];
-for (let i = asciDepart; i <= dernierValeurAscii; i++) {
+let lettres = "";
+for (let i = asciDeDepart; i <= dernierValeurAscii; i++) {
   lettres.push(String.fromCharCode(i)); // ajoute les lettres ascii à partir de la lettre saisie 
   if (lettres != str(lettres)){
     console.log("erreur")
   }
 }
 
-console.log(lettres.join(",")); // affiche la letre à partire de Z
+console.log(lettres.join(",")); 
 
 
 

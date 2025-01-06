@@ -16,10 +16,7 @@ Attention : je compte sur vous pour gérer les potentielles erreurs d’argument
 Fonctions interdites: 
 -La fonction reverse  */
 
-// const arguments = process.argv.slice(2)
-// var chaineDeCaractere = "bonjoour";
-// var chaineDeCaractereRenverser =  chaineDeCaractere.split("").reverse("").join("");
-// console.log(chaineDeCaractereRenverser);
+
 const arguments = process.argv.slice(2)
 let chaineArguments = "";
 

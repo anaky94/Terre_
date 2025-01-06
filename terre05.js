@@ -12,9 +12,11 @@ Tu ne me la mettras pas à l’envers.
 Attention : gérez aussi les entiers négatifs.
 */
 
-const arguments = process.argv.slice(2)
-var ChiffrePair = 2
-arguments.forEach((arg)=> {
+const arguments = process.argv.slice(2);
+
+var ChiffrePair = 2;
+
+arguments.forEach((arg) => {
     var afficheEntier = parseInt(arg);
 
     if (afficheEntier % ChiffrePair === 0) {

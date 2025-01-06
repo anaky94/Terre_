@@ -5,19 +5,20 @@ const premiervaleurAscii = 97;
 const dernierValeurAscii = 122;
 
 let lettres = "";
-for (let i = premiervaleurAscii; i <= dernierValeurAscii; i++) {
-<<<<<<< HEAD
-  i+= lettres +(String.fromCharCode(i));
-  console.log()
-  
-} 
-console.log(i);
-=======
 
+
+for (let i = premiervaleurAscii; i <= dernierValeurAscii; i++) {
+
+  lettres += (String.fromCharCode(i));
   
-  lettres += String.fromCharCode(i);
   
 } 
 console.log(lettres);
->>>>>>> a66bc50c108572e88f9485525725cde5fdeb92d4
+
+// console.log(String.fromCharCode(i));
+  
+  
+
+
+
 
