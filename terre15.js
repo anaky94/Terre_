@@ -2,22 +2,29 @@
 Créez un programme qui transforme une heure affichée en format 12h en une heure affichée au format 24h.
 */
 const heureDonnee = process.argv[2];
-const heureRegex =  /^([0-9]{1}[0-9] {1}|2[0-3]):[0-5][0-9]$/;
+const heureRegex =   /^([1-9]|1[0-2]):[0-5][0-9]\s?(AM|PM)$/i;
 
-function heurePmenAm(){
+function heureAmEnPm(){
     
     if (!heureRegex.test(heureDonnee)){
-        console.log("erreur : veillez entrez une heure valide du format HH:MM. ");
+        console.log("erreur : veillez entrez une heure valide du format HH:MM AM/PM. ");
         return; 
     }
 }
 // Extraction des heures et minutes
-const heure24 = parseInt(heureDonnee.split(":")[0], 10);
-const minute = heureDonnee.split (":")[1];
-// Conversion au format  des heures 
-const heure12 = (heure24 % 24  === 0) ? 12 : heure24 % 12; 
-const suffixe = (heure24 >= 24) ?"AM":"PM"; 
-// affichage de l'heure au format de 12heurs
-console.log(` il est ${heure12}:${minute.padStart(2,"0")} ${suffixe}`);
+const [heure, minute] = heureDonnee.split(":");
+const suffixe = heureDonnee.trim().slice(-2).toUpperCase(); //AM ou PM
 
-heurePmenAm();
+let heure24 = parseInt(heure, 10)
+
+// Conversion au format  24 heures 
+if (suffixe === "AM" && heure24 ===12){
+    heure24= 0; //Minuit(12AM) devient 00
+}else if (suffixe === "PM" && heure24 !==12){
+    heure24 += 12; // l'après-midi ajoute 12 heures 
+}
+
+// Affichage de l'heure au format de 12heurs
+console.log(` il est ${heure24.toString().padStart(2,"0")}:${minute.padStart(2,"0")}`);
+
+heureAmEnPm();
