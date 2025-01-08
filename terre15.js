@@ -15,14 +15,15 @@ function heureAmEnPm(){
 const [heure, minute] = heureDonnee.split(":");
 const suffixe = heureDonnee.trim().slice(-2).toUpperCase(); //AM ou PM
 
-let heure24 = parseInt(heure, 10)
+let heure24 = parseInt(heure, 10);
 
 // Conversion au format  24 heures 
-if (suffixe === "AM" && heure24 ===12){
-    heure24= 0; //Minuit(12AM) devient 00
-}else if (suffixe === "PM" && heure24 !==12){
+if (suffixe === "AM" && heure24 === 12){
+    heure24 = 0; //Minuit(12AM) devient 00
+}else if (suffixe === "PM" && heure24 !== 12 ){
     heure24 += 12; // l'après-midi ajoute 12 heures 
 }
+const sortieSuffice = (heure24>12) ? "PM" : "AM";
 
 // Affichage de l'heure au format de 12heurs
 console.log(` il est ${heure24.toString().padStart(2,"0")}:${minute.padStart(2,"0")}`);
