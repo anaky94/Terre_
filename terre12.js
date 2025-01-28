@@ -19,7 +19,6 @@ if (arguments.length !==1){
 }
 const nombre =parseFloat(arguments[0]);
 
-
 if (isNaN(nombre)) {
   console.log("ereur entrez un nombre valide");
   process.exit(1);
@@ -32,9 +31,9 @@ if (isNaN(nombre)) {
 } 
 
 const epsilon=0.00001;
-let estimation = nombre / 2;
+const estimation = nombre / 2;
 
-while( Math.abs(estimation*estimation-nombre)> epsilon){
+while (Math.abs(estimation*estimation-nombre)> epsilon){
 
     estimation=(estimation+nombre/estimation/2);
   }

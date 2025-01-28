@@ -20,7 +20,7 @@ if (isNaN(base) || isNaN(exposant)){
 }
 else{
     let resultat = base ** exposant;
-    console.log(resultat);
+    console.log(resultat); // bonne pratique let resultat = base *resultat 
 }
 
 

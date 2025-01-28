@@ -1,7 +1,7 @@
 /* Generer un code qui appel l'alphabet AScii suivis d'un retour à la ligne */
 
-const arguments = process.argv.slice(0)
-const premiervaleurAscii = 97;
+const arguments = process.argv.slice(0)// enlever cette rubrique 
+const premiervaleurAscii = 97;// metre le code en anglais ex codeFistlattrer
 const dernierValeurAscii = 122;
 
 let lettres = "";

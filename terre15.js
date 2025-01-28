@@ -2,7 +2,7 @@
 Créez un programme qui transforme une heure affichée en format 12h en une heure affichée au format 24h.
 */
 const heureDonnee = process.argv[2];
-const heureRegex =   /^([1-9]|1[0-2]):[0-5][0-9]$/;
+const heureRegex =   /^([1-9]|1[0-2]):[0-5][0-9]$/;// il manque des cas d'usage 
 
 function heureAmEnPm(){
     if (!heureRegex.test(heureDonnee)){

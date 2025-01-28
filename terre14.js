@@ -3,7 +3,7 @@
 Créez un programme qui transforme une heure affichée en format 24h en une heure affichée en format 12h.
 */
 const heureDonnee = process.argv[2];
-const heureRegex =  /^([0-9]{1}[0-9] {1}|2[0-3]):[0-5][0-9]$/;
+const heureRegex =  /^([0-9][0-9]|2[0-3]):[0-5][0-9]$/;
 
 function heurePmenAm(){
     
@@ -12,11 +12,12 @@ function heurePmenAm(){
         return; 
     }
 }
+
 // Extraction des heures et minutes
 const heure24 = parseInt(heureDonnee.split(":")[0], 10);
 const minute = heureDonnee.split (":")[1];
 
-// Conversion au format  des heures 
+// Conversion au format  des heures // il ya 3 condition a faire une qui gere a midi A minuit et l'apres midi 
 const heure12 = (heure24 % 12  === 0) ? 12 : heure24 % 12; 
 const suffixe = (heure24 >= 12) ? "AM" : "PM"; 
 

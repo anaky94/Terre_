@@ -34,7 +34,7 @@ for (let element of chaineArguments){
     compteur++;
 }
 if (Number(element)){ // verification si la chaine contien des chiffres 
-     console.log("Erreur : la chaine cntien un chiffre")
+     console.log("Erreur : la chaine contien un chiffre")
  }
 
  }

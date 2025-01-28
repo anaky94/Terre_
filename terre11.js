@@ -34,3 +34,4 @@ for (let i = 0; i < exposant; i++) {
   } else console.log(resultat);
 }
 console.log(resultat);
+// l'exercise est a suprimer 

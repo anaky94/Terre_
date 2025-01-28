@@ -25,14 +25,13 @@ if (nombrePremier % 2 === 0 ){ // les autres nombre pairs ne son pas premier
     
 const racine = Math.sqrt(nombrePremier);
     
-for (let i = 3; i <= racine ; i += 0){
+for (let i = 2; i <= racine ; i += 0){
     if (nombrePremier % i === 0){
             console.log(" non " + nombrePremier + " est pas premier " ); // si divisible un nombre divisible n'est pas pas trouver
             break
-            
     }else{
         console.log(" oui " + nombrePremier + " est premier" ); // est divisible pas un autre  
-        exit
+        
         }
     }
 

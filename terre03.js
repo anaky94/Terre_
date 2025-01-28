@@ -14,9 +14,10 @@ solide
 const arguments = process.argv.slice(2);
 
 if (arguments.length < 2){
-    console.log("veuillez fournir au moin deux argument"); // si aucun 
+    console.log("veuillez fournir au moin deux argument");
+    process.exit(1)
 
-}else {
+}else {// ici le else ne sert pas a grand chose faire en sort de simpplifier le code 
     for (let i=0; i < arguments.length; i++){
         console.log(arguments[i]);// 
     }

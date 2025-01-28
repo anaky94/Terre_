@@ -11,17 +11,17 @@ Fonctions interdites:
  */
 
 const arguments = process.argv.slice(2);
-
+// verifier si la longuer des argument est == a 1 
 let nombre = parseFloat(arguments[0]);
 let mutilplerenombre  = parseFloat(arguments[1]);
 
 if (isNaN(nombre) || isNaN(mutilplerenombre)){
     console.log("erreur: veuillez entrez des nombres")
 }else{
-    let resultat=(nombre*mutilplerenombre);
+    let resultat= (nombre*mutilplerenombre);
 }
 
-
+// l'exercice entier est à refaire c'est un élément qui peut etre multiplier par lui meme 
 
 
 
