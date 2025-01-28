@@ -12,22 +12,31 @@ Fonctions interdites:
 */
 const arguments = process.argv.slice(2);
 
-let puissanceDunNombre = parseFloat(25);
 
-let epsilon            = 0.00001;
-let estimation         = puissanceDunNombre/2;
+if (arguments.length !==1){
+  console.log("erreur : entrer un nombre")
+  process.exit(1);
+}
+const nombre =parseFloat(arguments[0]);
 
-if (isNaN(puissanceDunNombre)) {
+
+if (isNaN(nombre)) {
   console.log("ereur entrez un nombre valide");
-  return;
-} else if (puissanceDunNombre < 0) {
-  console.log("erreur : la racine carée d'un nombre négatif n'est pas définie");
-  return 
+  process.exit(1);
+} else if (nombre < 0) {
+  console.log("erreur : le nombre doit etre positif");
+  process.exit(1);
+} else if (!Number.isInteger(nombre)){
+  console.log("erreur : le nombre doit etre un entier. ")
+  process.exit(1);
 } 
 
-while( Math.abs(estimation*estimation-puissanceDunNombre)> epsilon){
+const epsilon=0.00001;
+let estimation = nombre / 2;
 
-    estimation=(estimation+puissanceDunNombre/estimation/2)
+while( Math.abs(estimation*estimation-nombre)> epsilon){
+
+    estimation=(estimation+nombre/estimation/2);
   }
 
-console.log(`la racince carée de${puissanceDunNombre} est ${resultat}`);
+console.log(`la racince carée de${nombre} est ${resultat}`);
