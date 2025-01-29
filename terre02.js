@@ -2,7 +2,7 @@
 
 */
 
-import 'node : process';
+
 
 console.log(process.argv)
 

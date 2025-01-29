@@ -21,8 +21,8 @@ Fonctions interdites:
 const arguments = process.argv.slice(2);
 
 if( arguments.length < 2){
-    console.error("erreur")
-    process.exit()
+    console.error("erreur");
+    process.exit();
 }
 
 const numbers = [];

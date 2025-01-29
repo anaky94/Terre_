@@ -16,7 +16,6 @@ Fonctions interdites:
 -La fonction pow
 */
 const arguments = process.argv.slice(2);
-
 let puissance = Number(arguments[0]);
 let exposant = Number(arguments[1]);
 
@@ -32,6 +31,7 @@ for (let i = 0; i < exposant; i++) {
   }else if (exposant & (puissance === 1)) {
     console.log(resultat);
   } else console.log(resultat);
+
 }
 console.log(resultat);
 // l'exercise est a suprimer 
