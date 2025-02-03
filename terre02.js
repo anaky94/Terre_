@@ -11,4 +11,5 @@ const index = string.lastIndexOf('\\') + 1; // bien coler les parenthese à la f
 const fileName = string.slice(index);
 
 console.log(string); 
+
 // 
