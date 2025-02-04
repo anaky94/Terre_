@@ -10,10 +10,14 @@ erreur.
 $> python exo.py 3 5
 erreur.
  */
+const arguments = process.argv.slice(2);
+
 
 let dividende = parseFloat(process.argv[2]);// declarer une  constante 
 
 let diviseur =parseFloat(process.argv[3]);//declarer en const
+
+
 
 // condition
 // for (cosnt argumen of argument){

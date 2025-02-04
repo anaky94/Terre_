@@ -12,7 +12,7 @@ solide
 const arguments = process.argv.slice(2);
 
 if (arguments.length < 2 ){ 
-    console.log("veuillez fournir au moins argument");
+    console.error("veuillez fournir au moins argument");
     process.exit();
 
 }
