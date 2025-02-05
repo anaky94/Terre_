@@ -11,40 +11,40 @@ $> python exo.py 3 5
 erreur.
  */
 const arguments = process.argv.slice(2);
+const dividende = parseFloat(arguments[0]);
+const diviseur = parseFloat(arguments[1]);
 
 
-let dividende = parseFloat(process.argv[2]);// declarer une  constante 
-
-let diviseur =parseFloat(process.argv[3]);//declarer en const
-
-
-
-// condition
-// for (cosnt argumen of argument){
-    // if (isnan(argument){
-    //     console.log(erre)
-    //     process.exit()
-    // }}/* toujours utiliser une bocle pour*/
-
-function division(dividende, diviseur){
-    if (diviseur ===0){
-        console.log("Erreur.")
-        return;
-    }
-    let resteDelaDivision = dividende % diviseur;
-    let resultatDeLaDivision = dividende / diviseur; 
-
-    if (resteDelaDivision===0){
-        console.log("reste: "+ resteDelaDivision)
-    }else{console.log("la divisiondonne un reste :" + resteDelaDivision)// cela ne sert a rien il faut suprimer 
-
-
-    }
-    console.log("resultat:"+ resultatDeLaDivision)
+if (arguments.length !== 2){
+    console.error("erreur entrez deux argument seulement");
+    process.exit();
 }
-
-division(dividende, diviseur)
-
+for (const argument of arguments){
+    if (isNaN(argument)){
+        console.error("ecrivez un nombre")
+        process.exit();
+    }   
+}
+if (dividende===0){
+    console.error("la division par zero est impossible");
+    process.exit();
+}
+if(diviseur===1){
+    console.log("diviser un nombre par 1 est" , dividende);
+    process.exit();
+}
+if (diviseur ===dividende){
+    console.log(1);
+    process.exit();
+}
+if(diviseur < dividende){
+    console.error("erreur.");
+    process.exit();
+}
+const quotient = dividende / diviseur;
+console.log("resultat",Math.round(quotient)); 
+const reste = dividende % diviseur;
+console.log("reste",reste);
 
 
 

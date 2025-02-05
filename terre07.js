@@ -22,8 +22,8 @@ stoceker cela dans une variable
 
 */
 const arguments = process.argv.slice(2)
-let chaineArguments = arguments[2];
 
-for (let i= chaineArguments.length-1; i>=0; i--){
-    Console.log(chaineArguments);
+
+for (let i=0; arguments.length-1; i>=0; i--){
+    Console.log(arguments);
 }

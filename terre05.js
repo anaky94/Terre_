@@ -15,7 +15,7 @@ Attention : gérez aussi les entiers négatifs.
 const arguments = process.argv.slice(2);
 
 for (const argument of arguments){ 
-    if (arguments.length>1){
+    if (arguments.length > 1){
         console.error("veuillez fournir un seul argument");
         process.exit();
     }
