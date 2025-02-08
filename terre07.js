@@ -23,7 +23,17 @@ stoceker cela dans une variable
 */
 const arguments = process.argv.slice(2)
 
-
-for (let i=0; arguments.length-1; i>=0; i--){
-    Console.log(arguments);
+function uneFonction(){
+    for(const argument of arguments){
+        if ((typeof argument !== "string") ){
+            console.error("erreur")
+        }
+    }
 }
+uneFonction(arguments[2]);
+
+
+
+// for (let i=0; arguments.length-1; i--){
+//     Console.log(arguments);
+// }

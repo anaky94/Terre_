@@ -10,8 +10,6 @@ let lettres = "";
 for (let i = premiervaleurAscii; i <= dernierValeurAscii; i++) {
 
   lettres += (String.fromCharCode(i));
-  
-  
 } 
 console.log(lettres);
 

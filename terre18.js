@@ -35,7 +35,6 @@ for(const argument of arguments){ // verifier si ma condition est un nombre par 
     const number = Number(argument);
     numbers.push(number);
 }
-
 let isSorted = true;
 
 for (let i=1; i < numbers.length; i++ ){
@@ -43,7 +42,7 @@ for (let i=1; i < numbers.length; i++ ){
     if(numbers[i] < numbers[i-1]){
        isSorted = false;
        break
-    } 
+    }
 }
 
 if (isSorted){
